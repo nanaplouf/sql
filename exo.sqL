@@ -48,7 +48,27 @@ CHANGE `prenom` `lastname` VARCHAR(100);
 
     Insérez quelques valeurs dans la tables commande pour tester la configuration.
     Afficher toutes les commandes du client avec l'id 1
-*/
+*/ 
+CREATE TABLE `order` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `id_customer` INT,
+    `date` Date, 
+    `total` FLOAT,
+    FOREIGN KEY (id_customer) REFERENCES customer(id)
+);
+
+SHOW TABLES;
+
+INSERT INTO `order` (`id_customer`,`date`,`total`)
+VALUES( 1,'2025-07-12',31.7),(2 ,'2025-04-24',182);
+
+SELECT * FROM `order`;
+
+SELECT *
+FROM `customer`
+INNER JOIN `order` ON `customer`.`id` = `order`.`id_customer`
+WHERE `customer`.`id` = 1;
+
 
 /*
 #Exercice 3 : Modification des données dans une table
