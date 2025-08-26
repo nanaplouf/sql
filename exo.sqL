@@ -1,20 +1,19 @@
 /*
+#Exercice 0 : Connection à la base de donnée
+*/
+
+/*
 #Exercice 1 : Création d une base de données et de tables
-    Créez une base de données nommée Entreprise.
 
-    Créez une table nommée Client avec les champs suivants :
+    Créez une table nommée client avec les champs suivants :
 
-    Identifiant du client (clé primaire).
+    Id(clé primaire).
     Nom.
     Prénom.
     Adresse email.
     Date d inscription.
-    Créez une table nommée Commande avec les champs suivants :
 
-    Identifiant de la commande (clé primaire).
-    Identifiant du client (clé étrangère).
-    Date de la commande.
-    Montant total.
-    Insérez quelques valeurs dans chacune des tables pour tester la configuration.
+    Insérez 2 clients dans la table pour tester.
+    
 */
-->
+

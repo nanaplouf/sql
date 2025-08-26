@@ -1,6 +1,6 @@
 # Dans le terminal de docker :
 
-# Pour écrire en bash :
+# Pour écrire en bash pour être en bash :
 -- bash
 
 # Pour la connection à mariadb :
@@ -11,7 +11,7 @@ USE ma_base_de_donnees;
 
 -- Voir les tables dans la base de données : 
 
-SHOW database;
+SHOW databases;
 
 -- Création d'une table :
 CREATE TABLE utilisateurs (
