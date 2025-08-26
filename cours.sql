@@ -51,3 +51,15 @@ WHERE age > 19;
 SELECT * FROM `user`
 WHERE `nom` = 'Alice';
 
+--Ajouter un champ^
+ALTER TABLE `pseudo`
+ADD id_user INT;
+
+--Ajouter la Foreign KEY
+ALTER TABLE `pseudo`
+FOREIGN KEY (id_user) REFERENCES user(id);
+
+--Jointure de deux tables
+SELECT *
+FROM `user`
+INNER JOIN `pseudo` ON `user`.`id` = `pseudo`.`id_user`;
