@@ -17,6 +17,25 @@ USE mydatabase;
     Insérez 2 clients dans la table pour tester.
     
 */
+CREATE TABLE `customer` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `lastname` VARCHAR(100),
+    `firstname` VARCHAR(100),
+    `mail` VARCHAR(255),
+    `date` Date
+);
+
+SHOW TABLES;
+
+INSERT INTO `customer` (`lastname`, `firstname`, `mail`, `date`)
+VALUES
+('Doe', 'John', 'john.doe@example.com', '2023-01-15'),
+('Smith', 'Jane', 'jane.smith@example.com', '2023-02-20');
+
+SELECT * FROM `customer`;
+
+ALTER TABLE `customer`
+CHANGE `prenom` `lastname` VARCHAR(100);
 
 /*
 #Exercice 2 : Création d une base de données et de tables
