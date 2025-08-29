@@ -51,7 +51,7 @@ WHERE age > 19;
 SELECT * FROM `user`
 WHERE `nom` = 'Alice';
 
---Ajouter un champ^
+--Ajouter un champ
 ALTER TABLE `pseudo`
 ADD id_user INT;
 
